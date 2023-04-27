@@ -2,3 +2,4 @@ build
 dist
 instance
 venv
+__pycache__
