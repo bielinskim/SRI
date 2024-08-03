@@ -1,0 +1,15 @@
+module Shop {
+  struct Product {
+    string name;
+    double price;
+    string description;
+  };
+
+  interface ProductManager {
+    boolean addProduct(in Product product);
+    boolean removeProduct(in string name);
+    Product getProduct(in string name);
+    double getProductPrice(in string name);
+    string getProductDescription(in string name);
+  };
+};
